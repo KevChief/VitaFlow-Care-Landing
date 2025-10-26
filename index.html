@@ -3,24 +3,256 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VitaFlow Care - Your Health Journey Starts Here</title>
+  <meta name="description" content="VitaFlow Care - Modern practice management and booking platform for healthcare practitioners and clients in Belgium. Reduce no-shows, streamline bookings, and grow your practice.">
+  <title>VitaFlow Care - Modern Healthcare Practice Management & Booking Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>VitaFlow Care</h1>
-    <p>Connecting you with the right practitioners for your needs.</p>
+  <!-- Hero Section -->
+  <header class="hero">
+    <nav class="nav-container">
+      <div class="logo">
+        <span class="logo-text">VitaFlow</span>
+        <span class="logo-accent">Care</span>
+      </div>
+      <div class="nav-links">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#benefits" class="nav-link">Benefits</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+    </nav>
+    
+    <div class="hero-content">
+      <h1 class="hero-title">
+        Your Complete Practice Management Solution
+      </h1>
+      <p class="hero-subtitle">
+        All-in-one platform for healthcare practitioners to manage appointments, reduce no-shows, and grow their practice. Built for Belgian healthcare professionals with GDPR compliance.
+      </p>
+      <div class="hero-cta">
+        <a href="#waitlist" class="btn btn-primary">Join the Waitlist</a>
+        <a href="#features" class="btn btn-secondary">Learn More</a>
+      </div>
+      <div class="hero-badge">
+        <span class="material-symbols-outlined">verified</span>
+        <span>GDPR Compliant • Made in Belgium</span>
+      </div>
+    </div>
   </header>
-  <main>
-    <section>
-      <h2>Welcome</h2>
-      <p>VitaFlow Care is your all-in-one platform to find and book appointments with doctors, psychologists, hairdressers, and more. Stay tuned as we build an open marketplace and secure app experience!</p>
-      <p><a href="https://marketplace.vitaflow.care" target="_blank">Explore Marketplace (Coming Soon)</a></p>
-      <p><a href="https://app.vitaflow.care" target="_blank">Login to Platform (Coming Soon)</a></p>
-    </section>
-  </main>
-  <footer>
-    <p>&copy; 2025 VitaFlow Care. All rights reserved.</p>
+
+  <!-- Problem Statement -->
+  <section class="problem-section">
+    <div class="container">
+      <h2 class="section-title">The Challenge Healthcare Practitioners Face</h2>
+      <div class="problem-grid">
+        <div class="problem-card">
+          <span class="material-symbols-outlined icon-warning">event_busy</span>
+          <h3>No-Shows & Cancellations</h3>
+          <p>Last-minute cancellations leave gaps in your calendar, costing you time and revenue.</p>
+        </div>
+        <div class="problem-card">
+          <span class="material-symbols-outlined icon-warning">apps</span>
+          <h3>Disconnected Tools</h3>
+          <p>Managing multiple platforms for bookings, communication, and content is time-consuming.</p>
+        </div>
+        <div class="problem-card">
+          <span class="material-symbols-outlined icon-warning">schedule</span>
+          <h3>Administrative Overhead</h3>
+          <p>Manual appointment management takes away from patient care time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solution/Features Section -->
+  <section id="features" class="features-section">
+    <div class="container">
+      <h2 class="section-title">Everything You Need in One Platform</h2>
+      <p class="section-subtitle">VitaFlow Care combines practice management, client booking, and communication tools into one seamless experience.</p>
+      
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <span class="material-symbols-outlined">calendar_month</span>
+          </div>
+          <h3>Smart Booking & Scheduling</h3>
+          <p>Let clients book appointments 24/7 while you maintain full control. Automatic reminders reduce no-shows by up to 60%.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <span class="material-symbols-outlined">group</span>
+          </div>
+          <h3>Waiting List Management</h3>
+          <p>Fill last-minute cancellations instantly. Control your capacity and intake with flexible waiting list functionality.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <span class="material-symbols-outlined">search</span>
+          </div>
+          <h3>Practitioner Marketplace</h3>
+          <p>Get discovered by new clients actively searching for your services. Grow your practice organically.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <span class="material-symbols-outlined">sync</span>
+          </div>
+          <h3>Calendar Integration</h3>
+          <p>Seamlessly sync with Google Calendar and Outlook. No double bookings, ever.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <span class="material-symbols-outlined">chat</span>
+          </div>
+          <h3>Secure Messaging</h3>
+          <p>Communicate with clients through GDPR-compliant, encrypted messaging. Share updates and educational content easily.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <span class="material-symbols-outlined">shield</span>
+          </div>
+          <h3>GDPR Compliant</h3>
+          <p>Built from the ground up for European healthcare standards. Your data and your clients' privacy are protected.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section id="benefits" class="benefits-section">
+    <div class="container">
+      <h2 class="section-title">Why Practitioners Choose VitaFlow Care</h2>
+      
+      <div class="benefits-list">
+        <div class="benefit-item">
+          <div class="benefit-number">01</div>
+          <div class="benefit-content">
+            <h3>Maximize Calendar Utilization</h3>
+            <p>Reduce gaps and no-shows with smart waiting lists that automatically fill cancellations.</p>
+          </div>
+        </div>
+
+        <div class="benefit-item">
+          <div class="benefit-number">02</div>
+          <div class="benefit-content">
+            <h3>Save Hours Every Week</h3>
+            <p>Eliminate phone tag and manual scheduling. Clients book themselves while you focus on care.</p>
+          </div>
+        </div>
+
+        <div class="benefit-item">
+          <div class="benefit-number">03</div>
+          <div class="benefit-content">
+            <h3>All-in-One Solution</h3>
+            <p>Stop juggling multiple tools. One platform for bookings, communication, content, and practice management.</p>
+          </div>
+        </div>
+
+        <div class="benefit-item">
+          <div class="benefit-number">04</div>
+          <div class="benefit-content">
+            <h3>Grow Your Practice</h3>
+            <p>Get discovered through our practitioner marketplace and attract new clients actively searching for your services.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who It's For -->
+  <section class="audience-section">
+    <div class="container">
+      <h2 class="section-title">Built for Healthcare Practitioners</h2>
+      <div class="audience-grid">
+        <div class="audience-card">
+          <span class="material-symbols-outlined">local_hospital</span>
+          <h4>General Practitioners</h4>
+        </div>
+        <div class="audience-card">
+          <span class="material-symbols-outlined">psychology</span>
+          <h4>Psychologists</h4>
+        </div>
+        <div class="audience-card">
+          <span class="material-symbols-outlined">dentistry</span>
+          <h4>Dentists</h4>
+        </div>
+        <div class="audience-card">
+          <span class="material-symbols-outlined">spa</span>
+          <h4>Physiotherapists</h4>
+        </div>
+        <div class="audience-card">
+          <span class="material-symbols-outlined">healing</span>
+          <h4>Therapists</h4>
+        </div>
+        <div class="audience-card">
+          <span class="material-symbols-outlined">more_horiz</span>
+          <h4>And More...</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="waitlist" class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Join the VitaFlow Care Community</h2>
+        <p class="cta-text">Be among the first Belgian practitioners to experience the future of practice management. Limited spots available for our beta launch.</p>
+        <div class="cta-buttons">
+          <a href="mailto:hello@vitaflow.care?subject=Beta%20Waitlist" class="btn btn-primary btn-large">Join the Waitlist</a>
+        </div>
+        <p class="cta-note">Launching in Belgium • Q1 2026</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="logo">
+            <span class="logo-text">VitaFlow</span>
+            <span class="logo-accent">Care</span>
+          </div>
+          <p>Modern practice management for healthcare practitioners.</p>
+        </div>
+        
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Product</h4>
+            <a href="#features">Features</a>
+            <a href="#benefits">Benefits</a>
+            <a href="#waitlist">Join Waitlist</a>
+          </div>
+          
+          <div class="footer-column">
+            <h4>Company</h4>
+            <a href="mailto:hello@vitaflow.care">Contact</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+          
+          <div class="footer-column">
+            <h4>Connect</h4>
+            <a href="mailto:hello@vitaflow.care">hello@vitaflow.care</a>
+            <p class="footer-location">🇧🇪 Made in Belgium</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 VitaFlow Care. All rights reserved. GDPR Compliant.</p>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
