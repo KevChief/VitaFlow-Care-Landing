@@ -398,9 +398,12 @@ section {
 
 .audience-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: var(--spacing-m);
   margin-top: var(--spacing-xl);
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .audience-card {
@@ -524,6 +527,13 @@ section {
 }
 
 /* === Responsive Design === */
+@media (max-width: 1024px) {
+  .audience-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 600px;
+  }
+}
+
 @media (max-width: 768px) {
   .hero-title {
     font-size: 36px;
@@ -542,9 +552,12 @@ section {
   }
   
   .features-grid,
-  .problem-grid,
-  .audience-grid {
+  .problem-grid {
     grid-template-columns: 1fr;
+  }
+  
+  .audience-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
   
   .benefit-item {
@@ -583,6 +596,10 @@ section {
   
   .hero-title {
     font-size: 32px;
+  }
+  
+  .audience-grid {
+    grid-template-columns: 1fr;
   }
   
   section {
