@@ -35,15 +35,33 @@
     
     <div class="hero-content">
       <h1 class="hero-title">
-        Your Complete Practice Management Solution
+        Healthcare Management Made Simple
       </h1>
       <p class="hero-subtitle">
-        All-in-one platform for practitioners to manage appointments, reduce no-shows, and grow their practice. Built for professionals with GDPR compliance.
+        Whether you're a practitioner managing your practice or a patient looking for care, VitaFlow Care connects you seamlessly.
       </p>
-      <div class="hero-cta">
-        <a href="#waitlist" class="btn btn-primary">Join the Waitlist</a>
-        <a href="#features" class="btn btn-secondary">Learn More</a>
+      
+      <!-- Audience Selection -->
+      <div class="audience-selector">
+        <div class="audience-option" onclick="showPractitionerContent()">
+          <div class="audience-icon">
+            <span class="material-symbols-outlined">medical_information</span>
+          </div>
+          <h3>For Practitioners</h3>
+          <p>Manage your practice, reduce no-shows, and grow your client base</p>
+          <span class="audience-arrow">→</span>
+        </div>
+        
+        <div class="audience-option" onclick="showPatientContent()">
+          <div class="audience-icon">
+            <span class="material-symbols-outlined">person</span>
+          </div>
+          <h3>For Patients</h3>
+          <p>Find practitioners, book appointments, and manage your healthcare journey</p>
+          <span class="audience-arrow">→</span>
+        </div>
       </div>
+      
       <div class="hero-badge">
         <span class="material-symbols-outlined">verified</span>
         <span>GDPR Compliant • Made in Belgium</span>
@@ -51,175 +69,351 @@
     </div>
   </header>
 
-  <!-- Problem Statement -->
-  <section class="problem-section">
-    <div class="container">
-      <h2 class="section-title">The Challenge Practitioners Face</h2>
-      <div class="problem-grid">
-        <div class="problem-card">
-          <span class="material-symbols-outlined icon-warning">event_busy</span>
-          <h3>No-Shows & Cancellations</h3>
-          <p>Last-minute cancellations leave gaps in your calendar, costing you time and revenue.</p>
-        </div>
-        <div class="problem-card">
-          <span class="material-symbols-outlined icon-warning">apps</span>
-          <h3>Disconnected Tools</h3>
-          <p>Managing multiple platforms for bookings, communication, and content is time-consuming.</p>
-        </div>
-        <div class="problem-card">
-          <span class="material-symbols-outlined icon-warning">schedule</span>
-          <h3>Administrative Overhead</h3>
-          <p>Manual appointment management takes away from patient care time.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Solution/Features Section -->
-  <section id="features" class="features-section">
-    <div class="container">
-      <h2 class="section-title">Everything You Need in One Platform</h2>
-      <p class="section-subtitle">VitaFlow Care combines practice management, client booking, and communication tools into one seamless experience.</p>
-      
-      <div class="features-grid">
-        <div class="feature-card">
-          <div class="feature-icon">
-            <span class="material-symbols-outlined">calendar_month</span>
+  <!-- Practitioner Content (Default) -->
+  <div id="practitioner-content" class="content-section active">
+    <!-- Problem Statement -->
+    <section class="problem-section">
+      <div class="container">
+        <h2 class="section-title">The Challenge Practitioners Face</h2>
+        <div class="problem-grid">
+          <div class="problem-card">
+            <span class="material-symbols-outlined icon-warning">event_busy</span>
+            <h3>No-Shows & Cancellations</h3>
+            <p>Last-minute cancellations leave gaps in your calendar, costing you time and revenue.</p>
           </div>
-          <h3>Smart Booking & Scheduling</h3>
-          <p>Let clients book appointments 24/7 while you maintain full control. Automatic reminders reduce no-shows by up to 60%.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">
-            <span class="material-symbols-outlined">group</span>
+          <div class="problem-card">
+            <span class="material-symbols-outlined icon-warning">apps</span>
+            <h3>Disconnected Tools</h3>
+            <p>Managing multiple platforms for bookings, communication, and content is time-consuming.</p>
           </div>
-          <h3>Waiting List Management</h3>
-          <p>Fill last-minute cancellations instantly. Control your capacity and intake with flexible waiting list functionality.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">
-            <span class="material-symbols-outlined">search</span>
-          </div>
-          <h3>Practitioner Marketplace</h3>
-          <p>Get discovered by new clients actively searching for your services. Grow your practice organically.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">
-            <span class="material-symbols-outlined">sync</span>
-          </div>
-          <h3>Calendar Integration</h3>
-          <p>Seamlessly sync with Google Calendar and Outlook. No double bookings, ever.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">
-            <span class="material-symbols-outlined">chat</span>
-          </div>
-          <h3>Secure Messaging</h3>
-          <p>Communicate with clients through GDPR-compliant, encrypted messaging. Share updates and educational content easily.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon">
-            <span class="material-symbols-outlined">shield</span>
-          </div>
-          <h3>GDPR Compliant</h3>
-          <p>Built from the ground up for European standards. Your data and your clients' privacy are protected.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Benefits Section -->
-  <section id="benefits" class="benefits-section">
-    <div class="container">
-      <h2 class="section-title">Why Practitioners Choose VitaFlow Care</h2>
-      
-      <div class="benefits-list">
-        <div class="benefit-item">
-          <div class="benefit-number">01</div>
-          <div class="benefit-content">
-            <h3>Maximize Calendar Utilization</h3>
-            <p>Reduce gaps and no-shows with smart waiting lists that automatically fill cancellations.</p>
-          </div>
-        </div>
-
-        <div class="benefit-item">
-          <div class="benefit-number">02</div>
-          <div class="benefit-content">
-            <h3>Save Hours Every Week</h3>
-            <p>Eliminate phone tag and manual scheduling. Clients book themselves while you focus on care.</p>
-          </div>
-        </div>
-
-        <div class="benefit-item">
-          <div class="benefit-number">03</div>
-          <div class="benefit-content">
-            <h3>All-in-One Solution</h3>
-            <p>Stop juggling multiple tools. One platform for bookings, communication, content, and practice management.</p>
-          </div>
-        </div>
-
-        <div class="benefit-item">
-          <div class="benefit-number">04</div>
-          <div class="benefit-content">
-            <h3>Grow Your Practice</h3>
-            <p>Get discovered through our practitioner marketplace and attract new clients actively searching for your services.</p>
+          <div class="problem-card">
+            <span class="material-symbols-outlined icon-warning">schedule</span>
+            <h3>Administrative Overhead</h3>
+            <p>Manual appointment management takes away from patient care time.</p>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Who It's For -->
-  <section class="audience-section">
-    <div class="container">
-      <h2 class="section-title">Built for Practitioners</h2>
-      <div class="audience-grid">
-        <div class="audience-card">
-          <span class="material-symbols-outlined">local_hospital</span>
-          <h4>General Practitioners</h4>
-        </div>
-        <div class="audience-card">
-          <span class="material-symbols-outlined">psychology</span>
-          <h4>Psychologists</h4>
-        </div>
-        <div class="audience-card">
-          <span class="material-symbols-outlined">dentistry</span>
-          <h4>Dentists</h4>
-        </div>
-        <div class="audience-card">
-          <span class="material-symbols-outlined">spa</span>
-          <h4>Physiotherapists</h4>
-        </div>
-        <div class="audience-card">
-          <span class="material-symbols-outlined">healing</span>
-          <h4>Therapists</h4>
-        </div>
-        <div class="audience-card">
-          <span class="material-symbols-outlined">more_horiz</span>
-          <h4>And More...</h4>
+    <!-- Solution/Features Section -->
+    <section id="features" class="features-section">
+      <div class="container">
+        <h2 class="section-title">Everything You Need in One Platform</h2>
+        <p class="section-subtitle">VitaFlow Care combines practice management, client booking, and communication tools into one seamless experience.</p>
+        
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <span class="material-symbols-outlined">calendar_month</span>
+            </div>
+            <h3>Smart Booking & Scheduling</h3>
+            <p>Let clients book appointments 24/7 while you maintain full control. Automatic reminders reduce no-shows by up to 60%.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <span class="material-symbols-outlined">group</span>
+            </div>
+            <h3>Waiting List Management</h3>
+            <p>Fill last-minute cancellations instantly. Control your capacity and intake with flexible waiting list functionality.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <span class="material-symbols-outlined">search</span>
+            </div>
+            <h3>Practitioner Marketplace</h3>
+            <p>Get discovered by new clients actively searching for your services. Grow your practice organically.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <span class="material-symbols-outlined">sync</span>
+            </div>
+            <h3>Calendar Integration</h3>
+            <p>Seamlessly sync with Google Calendar and Outlook. No double bookings, ever.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <span class="material-symbols-outlined">chat</span>
+            </div>
+            <h3>Secure Messaging</h3>
+            <p>Communicate with clients through GDPR-compliant, encrypted messaging. Share updates and educational content easily.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <span class="material-symbols-outlined">shield</span>
+            </div>
+            <h3>GDPR Compliant</h3>
+            <p>Built from the ground up for European standards. Your data and your clients' privacy are protected.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CTA Section -->
-  <section id="waitlist" class="cta-section">
-    <div class="container">
-      <div class="cta-content">
-        <h2 class="cta-title">Join the VitaFlow Care Community</h2>
-        <p class="cta-text">Be among the first to experience the future of practice management.<br>Limited spots available for our beta launch.</p>
-        <div class="cta-buttons">
-          <a href="mailto:hello@vitaflow.care?subject=Beta%20Waitlist" class="btn btn-primary btn-large">Join the Waitlist</a>
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits-section">
+      <div class="container">
+        <h2 class="section-title">Why Practitioners Choose VitaFlow Care</h2>
+        
+        <div class="benefits-list">
+          <div class="benefit-item">
+            <div class="benefit-number">01</div>
+            <div class="benefit-content">
+              <h3>Maximize Calendar Utilization</h3>
+              <p>Reduce gaps and no-shows with smart waiting lists that automatically fill cancellations.</p>
+            </div>
+          </div>
+
+          <div class="benefit-item">
+            <div class="benefit-number">02</div>
+            <div class="benefit-content">
+              <h3>Save Hours Every Week</h3>
+              <p>Eliminate phone tag and manual scheduling. Clients book themselves while you focus on care.</p>
+            </div>
+          </div>
+
+          <div class="benefit-item">
+            <div class="benefit-number">03</div>
+            <div class="benefit-content">
+              <h3>All-in-One Solution</h3>
+              <p>Stop juggling multiple tools. One platform for bookings, communication, content, and practice management.</p>
+            </div>
+          </div>
+
+          <div class="benefit-item">
+            <div class="benefit-number">04</div>
+            <div class="benefit-content">
+              <h3>Grow Your Practice</h3>
+              <p>Get discovered through our practitioner marketplace and attract new clients actively searching for your services.</p>
+            </div>
+          </div>
         </div>
-        <p class="cta-note">Launching Soon! • Q1 2026</p>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <!-- Who It's For -->
+    <section class="audience-section">
+      <div class="container">
+        <h2 class="section-title">Built for Practitioners</h2>
+        <div class="audience-grid">
+          <div class="audience-card">
+            <span class="material-symbols-outlined">local_hospital</span>
+            <h4>General Practitioners</h4>
+          </div>
+          <div class="audience-card">
+            <span class="material-symbols-outlined">psychology</span>
+            <h4>Psychologists</h4>
+          </div>
+          <div class="audience-card">
+            <span class="material-symbols-outlined">dentistry</span>
+            <h4>Dentists</h4>
+          </div>
+          <div class="audience-card">
+            <span class="material-symbols-outlined">spa</span>
+            <h4>Physiotherapists</h4>
+          </div>
+          <div class="audience-card">
+            <span class="material-symbols-outlined">healing</span>
+            <h4>Therapists</h4>
+          </div>
+          <div class="audience-card">
+            <span class="material-symbols-outlined">more_horiz</span>
+            <h4>And More...</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="waitlist" class="cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2 class="cta-title">Join the VitaFlow Care Community</h2>
+          <p class="cta-text">Be among the first to experience the future of practice management.<br>Limited spots available for our beta launch.</p>
+          <div class="cta-buttons">
+            <a href="mailto:hello@vitaflow.care?subject=Beta%20Waitlist%20-%20Practitioner" class="btn btn-primary btn-large">Join as Practitioner</a>
+          </div>
+          <p class="cta-note">Launching Soon! • Q1 2026</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Patient Content -->
+  <div id="patient-content" class="content-section">
+    <!-- Patient Problem Statement -->
+    <section class="problem-section">
+      <div class="container">
+        <h2 class="section-title">Finding Healthcare Shouldn't Be Hard</h2>
+        <div class="problem-grid">
+          <div class="problem-card">
+            <span class="material-symbols-outlined icon-warning">search_off</span>
+            <h3>Hard to Find Practitioners</h3>
+            <p>Searching for the right healthcare provider takes time and effort across multiple platforms.</p>
+          </div>
+          <div class="problem-card">
+            <span class="material-symbols-outlined icon-warning">phone_disabled</span>
+            <h3>Phone Tag Frustration</h3>
+            <p>Calling during office hours, waiting on hold, and playing phone tag to book appointments.</p>
+          </div>
+          <div class="problem-card">
+            <span class="material-symbols-outlined icon-warning">event_busy</span>
+            <h3>Long Waiting Times</h3>
+            <p>Waiting weeks or months for an appointment when you need care now.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Patient Features -->
+    <section class="features-section">
+      <div class="container">
+        <h2 class="section-title">Your Healthcare Journey, Simplified</h2>
+        <p class="section-subtitle">VitaFlow Care puts you in control of your healthcare with easy booking, practitioner discovery, and seamless communication.</p>
+        
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <span class="material-symbols-outlined">search</span>
+            </div>
+            <h3>Discover Practitioners</h3>
+            <p>Browse our marketplace to find doctors, psychologists, dentists, and more. Filter by specialty, location, and availability.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <span class="material-symbols-outlined">calendar_add_on</span>
+            </div>
+            <h3>Book Instantly 24/7</h3>
+            <p>See real-time availability and book appointments any time, day or night. No phone calls needed.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <span class="material-symbols-outlined">list_alt</span>
+            </div>
+            <h3>Join Waiting Lists</h3>
+            <p>Get notified instantly when cancellations open up. Be first in line for last-minute availability.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <span class="material-symbols-outlined">notifications_active</span>
+            </div>
+            <h3>Smart Reminders</h3>
+            <p>Never miss an appointment with automated reminders via email and notifications.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <span class="material-symbols-outlined">forum</span>
+            </div>
+            <h3>Secure Communication</h3>
+            <p>Message your practitioners securely, share documents, and get follow-up care instructions.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <span class="material-symbols-outlined">folder_shared</span>
+            </div>
+            <h3>Manage Your Care</h3>
+            <p>Keep track of all your appointments, practitioners, and healthcare journey in one place.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Patient Benefits -->
+    <section class="benefits-section">
+      <div class="container">
+        <h2 class="section-title">Why Patients Love VitaFlow Care</h2>
+        
+        <div class="benefits-list">
+          <div class="benefit-item">
+            <div class="benefit-number">01</div>
+            <div class="benefit-content">
+              <h3>Find Care Faster</h3>
+              <p>Search and compare practitioners in minutes. See availability, specialties, and book instantly.</p>
+            </div>
+          </div>
+
+          <div class="benefit-item">
+            <div class="benefit-number">02</div>
+            <div class="benefit-content">
+              <h3>Book on Your Schedule</h3>
+              <p>No more phone tag. Book appointments 24/7 from any device, whenever it's convenient for you.</p>
+            </div>
+          </div>
+
+          <div class="benefit-item">
+            <div class="benefit-number">03</div>
+            <div class="benefit-content">
+              <h3>Never Miss Openings</h3>
+              <p>Join waiting lists and get instant notifications when slots open up. Get care when you need it.</p>
+            </div>
+          </div>
+
+          <div class="benefit-item">
+            <div class="benefit-number">04</div>
+            <div class="benefit-content">
+              <h3>All in One Place</h3>
+              <p>Manage all your healthcare appointments, communications, and practitioners in a single secure platform.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Patient Specialties -->
+    <section class="audience-section">
+      <div class="container">
+        <h2 class="section-title">Find the Care You Need</h2>
+        <div class="audience-grid">
+          <div class="audience-card">
+            <span class="material-symbols-outlined">local_hospital</span>
+            <h4>General Practitioners</h4>
+          </div>
+          <div class="audience-card">
+            <span class="material-symbols-outlined">psychology</span>
+            <h4>Psychologists</h4>
+          </div>
+          <div class="audience-card">
+            <span class="material-symbols-outlined">dentistry</span>
+            <h4>Dentists</h4>
+          </div>
+          <div class="audience-card">
+            <span class="material-symbols-outlined">spa</span>
+            <h4>Physiotherapists</h4>
+          </div>
+          <div class="audience-card">
+            <span class="material-symbols-outlined">healing</span>
+            <h4>Therapists</h4>
+          </div>
+          <div class="audience-card">
+            <span class="material-symbols-outlined">more_horiz</span>
+            <h4>And More...</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Patient CTA -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2 class="cta-title">Start Your Healthcare Journey</h2>
+          <p class="cta-text">Be among the first Belgian patients to experience simplified healthcare booking and management.</p>
+          <div class="cta-buttons">
+            <a href="mailto:hello@vitaflow.care?subject=Beta%20Waitlist%20-%20Patient" class="btn btn-primary btn-large">Join as Patient</a>
+          </div>
+          <p class="cta-note">Launching Soon! • Q1 2026</p>
+        </div>
+      </div>
+    </section>
+  </div>
 
   <!-- Footer -->
   <footer id="contact" class="footer">
@@ -262,5 +456,28 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    // Audience selection functionality
+    function showPractitionerContent() {
+      document.getElementById('practitioner-content').classList.add('active');
+      document.getElementById('patient-content').classList.remove('active');
+      
+      // Smooth scroll to content
+      setTimeout(() => {
+        document.getElementById('practitioner-content').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 100);
+    }
+
+    function showPatientContent() {
+      document.getElementById('patient-content').classList.add('active');
+      document.getElementById('practitioner-content').classList.remove('active');
+      
+      // Smooth scroll to content
+      setTimeout(() => {
+        document.getElementById('patient-content').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 100);
+    }
+  </script>
 </body>
 </html>

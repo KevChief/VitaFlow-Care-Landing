@@ -171,6 +171,95 @@ a {
   line-height: 1.6;
 }
 
+/* === Audience Selector === */
+.audience-selector {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-m);
+  max-width: 900px;
+  margin: 0 auto var(--spacing-xl);
+}
+
+.audience-option {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-large);
+  padding: var(--spacing-l);
+  text-align: center;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+.audience-option:hover {
+  background-color: rgba(108, 233, 166, 0.1);
+  border-color: var(--primary-accent);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.audience-option:hover .audience-arrow {
+  transform: translateX(8px);
+}
+
+.audience-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, var(--primary-accent), var(--secondary-accent));
+  border-radius: var(--radius-large);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--spacing-m);
+}
+
+.audience-icon .material-symbols-outlined {
+  font-size: 48px;
+  color: var(--light-text-primary);
+}
+
+.audience-option h3 {
+  color: #F2F4F7;
+  margin-bottom: var(--spacing-xs);
+  font-size: 24px;
+}
+
+.audience-option p {
+  color: #98A2B3;
+  font-size: 15px;
+  margin-bottom: var(--spacing-s);
+}
+
+.audience-arrow {
+  display: inline-block;
+  color: var(--primary-accent);
+  font-size: 24px;
+  font-weight: bold;
+  transition: transform var(--transition-normal);
+}
+
+/* === Content Sections === */
+.content-section {
+  display: none;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.content-section.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .hero-cta {
   display: flex;
   gap: var(--spacing-s);
@@ -549,6 +638,23 @@ section {
   
   .nav-links {
     display: none;
+  }
+  
+  .audience-selector {
+    grid-template-columns: 1fr;
+  }
+  
+  .audience-option h3 {
+    font-size: 20px;
+  }
+  
+  .audience-icon {
+    width: 64px;
+    height: 64px;
+  }
+  
+  .audience-icon .material-symbols-outlined {
+    font-size: 36px;
   }
   
   .features-grid,
