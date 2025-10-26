@@ -14,14 +14,14 @@ The color system reflects VitaFlow’s “Vital Flow” ethos, with a focus on h
 
 ### 1.1. Shared Colors
 
-These colors maintain brand consistency across both themes, inspired by the logo’s green (#6CE9A6) and blue (#5FE8D5).
+These colors maintain brand consistency across both themes, with improved contrast for visual clarity.
 
 #### Accent Colors
 
 | Preview | Name | Description | Hex | Usage |
 |---------|------|-------------|-----|-------|
-| ![Vital Green](https://placehold.co/15x15/6CE9A6/6CE9A6.png) | `primaryAccent` | Vital Green | `#6CE9A6` | Buttons, progress bars, active states, highlights. Represents vitality and health. |
-| ![Flow Blue](https://placehold.co/15x15/5FE8D5/5FE8D5.png) | `secondaryAccent` | Flow Blue | `#5FE8D5` | (Use Sparingly) Subtle highlights, notifications, flow indicators (e.g., calendar sync progress). |
+| ![Vital Green](https://placehold.co/15x15/6CE9A6/6CE9A6.png) | `primaryAccent` | Vital Green | `#6CE9A6` | Primary buttons, progress bars, active states, highlights. Represents vitality and health. |
+| ![Flow Teal](https://placehold.co/15x15/0891B2/0891B2.png) | `secondaryAccent` | Flow Teal | `#0891B2` | Secondary buttons, gradients, flow indicators (e.g., calendar sync progress), outlined elements. Creates depth when paired with primary accent. |
 
 #### System Colors
 
